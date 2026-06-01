@@ -14,6 +14,16 @@ def create_client(api_key):
     client = genai.Client(api_key = api_key)
     return client
 
+def format_history(history):
+    formated_history = ""
+    
+    for message in history:
+        formated_history += message["role"] +" : " + message["content"] + "\n"
+
+    return formated_history
+
+
+
 def send_prompt(client, model, prompt):
     
 
@@ -27,19 +37,22 @@ def send_prompt(client, model, prompt):
 print("Script started")
 
 def main():
-    history = []
-    prompt = "Explain how AI works in a few words"
+    history = []  
     model = "gemini-2.5-flash"
-
-    history.append({"role" : "User", "message" : prompt})
-
     client = create_client(load_api_key())
-
-    response = send_prompt(client, model, prompt)
-
-    history.append({"role" : "Assistant", "message" : response.text})
     
-    print(response.text)
+    while True:
+        prompt = input("User : ")
+        history.append({"role" : "User", "content" : prompt})
+        print("DEBUG : HISTORY - ", history)
+        if prompt == "exit":
+            break
+        formated_history = format_history(history)
+        print("DEBUG : FORMATED HISTORY - ", formated_history)
+        response = send_prompt(client, model, formated_history)
+        history.append({"role" : "Assistant", "content" : response.text})
+        
+        print(response.text)
 
 if __name__ == "__main__":
     main()
