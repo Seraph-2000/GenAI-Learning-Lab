@@ -1,0 +1,58 @@
+[
+  {
+    "source": "Refund Policy",
+    "content": "Customers can request refunds within 30 days of purchase. Refunds are processed within 5 business days after approval."
+  },
+  {
+    "source": "Vacation Policy",
+    "content": "Employees receive 20 days of paid leave annually. Unused leave can be carried forward for up to 5 days."
+  },
+  {
+    "source": "Parental Leave Policy",
+    "content": "Employees are entitled to 12 weeks of paid parental leave following the birth or adoption of a child."
+  },
+  {
+    "source": "Health Insurance Policy",
+    "content": "The company provides medical insurance coverage for employees and their dependents."
+  },
+  {
+    "source": "Training Policy",
+    "content": "Employees receive an annual professional development budget of $1000."
+  },
+  {
+    "source": "Performance Review Policy",
+    "content": "Performance reviews are conducted twice a year in June and December."
+  },
+  {
+    "source": "Promotion Policy",
+    "content": "Promotion decisions are based on performance reviews, business needs, and demonstrated impact."
+  },
+  {
+    "source": "Resignation Policy",
+    "content": "Employees must provide 30 days notice before leaving the company."
+  },
+  {
+    "source": "Remote Work Policy",
+    "content": "Employees may work remotely up to three days per week with manager approval."
+  },
+  {
+    "source": "Travel Reimbursement Policy",
+    "content": "Business travel expenses including flights, hotels, and meals are reimbursable."
+  },
+  {
+    "source": "Laptop Policy",
+    "content": "Every employee receives a company laptop and is responsible for maintaining it."
+  },
+  {
+    "source": "Security Policy",
+    "content": "Employees must enable multi-factor authentication and complete annual security awareness training."
+  },
+  {
+    "source": "Data Privacy Policy",
+    "content": "Customer data must be handled according to company privacy guidelines and regulatory requirements."
+  },
+  {
+    "source": "Employee Benefits Overview",
+    "content": "Employee benefits include health insurance, paid leave, parental leave, training budgets, and remote work flexibility."
+  }
+]
