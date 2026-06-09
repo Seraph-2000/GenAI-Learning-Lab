@@ -16,48 +16,128 @@ Rather than relying solely on tutorials, this repository focuses on implementing
 
 ## Projects
 
-### Project 1 — Basic RAG
+### Project 1 — LLM Chatbot Fundamentals
 
-Learned:
+Built a chatbot from scratch while progressively introducing core LLM application concepts.
+
+Versions Covered:
+
+* Basic Chat Interface
+* Conversation Memory
+* System Prompts
+* Manual Tool Calling
+* LLM-Driven Tool Calling
+
+Key Learnings:
+
+* Prompt Engineering
+* Conversation History Management
+* System Instructions
+* Function Calling
+* Tool Selection
+* LLM Application Design
+
+---
+
+### Project 2 — Retrieval-Augmented Generation (RAG)
+
+Built a RAG pipeline from scratch without relying on external frameworks.
+
+Versions Covered:
+
+* Manual Retrieval
+* Grounded Generation
+* Similarity Thresholding
+* Top-K Retrieval
+* Conversational RAG
+* Query Rewriting
+* Source Attribution
+
+Key Learnings:
 
 * Embeddings
 * Vector Search
 * Similarity Search
 * Retrieval-Augmented Generation
+* Retrieval Evaluation
+* Context Management
+* Citation and Source Tracking
 
-### Project 2 — Conversational RAG
+---
 
-Learned:
+### Project 3 — Tool-Using Agents
 
-* Conversation Memory
-* Query Rewriting
-* Multi-Turn Retrieval
+Built agents capable of selecting and executing tools to solve user tasks.
 
-### Project 3 — Tool Agent
+Versions Covered:
 
-Learned:
+* Single Tool Agent
+* Multi-Tool Agent
+* Tool Result Synthesis
+* Tool Error Recovery
+* Planner Agent
+
+Key Learnings:
 
 * Tool Routing
 * Tool Execution
-* Planner Agents
 * Multi-Step Reasoning
+* Planning
+* Agent Architectures
+* Error Handling
+* Structured Outputs
+
+---
 
 ### Project 4 — Agentic RAG
 
-Learned:
+Extended traditional RAG systems with planning, evaluation, and reflection capabilities.
+
+Versions Covered:
 
 * Query Decomposition
 * Retrieval Evaluation
 * Reflective Retrieval
+
+Key Learnings:
+
+* Query Planning
+* Retrieval Evaluation
+* Reflection Loops
 * Self-Correction
+* Agentic RAG
+* Retrieval Optimization
+
+---
 
 ### Project 5 — Code Agent
 
-(In Progress)
+Status: In Progress
+
+Planned Topics:
+
+* Code Generation
+* Code Execution
+* Runtime Feedback
+* Error Correction
+* ReAct Pattern
+* Self-Improving Agents
+
+---
 
 ### Project 6 — Workflow Agent
 
-(Planned)
+Status: Planned
+
+Planned Topics:
+
+* State Management
+* Workflow Graphs
+* Conditional Routing
+* Agent Orchestration
+* Human-in-the-Loop Systems
+* LangGraph-Style Architectures
+
 
 ## Tech Stack
 
