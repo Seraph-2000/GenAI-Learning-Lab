@@ -22,5 +22,5 @@ llm = GeminiLLM(api_key=api_key, model=model)
 
 agent = CodeAgent(llm=llm, executor=executor)
 
-response = agent.run("write python code that prints an undefined variable x")
+response = agent.run("write python code that prints x, then y, then z without defining them")
 print(response)
