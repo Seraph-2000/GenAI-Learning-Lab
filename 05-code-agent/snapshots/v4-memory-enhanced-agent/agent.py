@@ -47,34 +47,35 @@ class CodeAgent:
                 {m["generated_code"]}
 
                 Error:
-                {m["execution_result"]["stderr"]}
+                {m["execution_result"].get("stderr", "")}
                 """
             
         reflection = f"""
-        You are an expert Python debugging assistant.
+You are an expert Python debugging assistant.
 
-        The following code was generated to solve a task
-        but failed during execution.
+The following code was generated to solve a task
+but failed during execution.
 
-        {memory_text}
+{memory_text}
 
-        Original Task:
-        {task}
+Original Task:
+{task}
 
-        Generated Code:
-        {code}
+Generated Code:
+{code}
 
-        Execution Error:
-        {error}
+Execution Error:
+{error}
 
-        Fix the code while preserving the original intent
-        of the task.
+Fix the code while preserving the original intent
+of the task.
 
-        Return ONLY executable Python code.
+Return ONLY executable Python code.
 
-        Do not include explanations.
-        Do not include markdown.
-        Do not include code fences."""
+Do not include explanations.
+Do not include markdown.
+Do not include code fences.
+"""
         return reflection
         
     def run(self,task):
@@ -91,6 +92,10 @@ class CodeAgent:
 
         attempt_history = []
         self._record_attempt(attempt_history=attempt_history, attempt_number=1, code= code, execution_result=response)
+
+        reflect_prompt = None
+        reflect_code = None
+        reflect_response = None
 
         if response["success"]:
             return {
