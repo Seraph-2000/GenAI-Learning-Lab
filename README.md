@@ -112,22 +112,33 @@ Key Learnings:
 
 ### Project 5 — Code Agent
 
-Status: In Progress
-
-Planned Topics:
+Versions Covered:
 
 * Code Generation
 * Code Execution
 * Runtime Feedback
-* Error Correction
-* ReAct Pattern
+* Reflection-Based Error Correction
+* Memory-Augmented Reflection
+* LLM-as-a-Judge Evaluation
+
+Key Learnings:
+
+* Agent Loops
+* Code Execution Environments
+* Runtime Error Handling
+* Reflection and Self-Correction
+* Sliding Window Memory
+* LLM-as-a-Judge
+* Structured Outputs
+* Agent Evaluation
+* Retry Strategies
 * Self-Improving Agents
 
 ---
 
 ### Project 6 — Workflow Agent
 
-Status: Planned
+Status: In progress
 
 Planned Topics:
 
@@ -138,6 +149,7 @@ Planned Topics:
 * Human-in-the-Loop Systems
 * LangGraph-Style Architectures
 
+---
 
 ## Tech Stack
 
@@ -162,4 +174,5 @@ Planned Topics:
 
 ## Repository Goal
 
-The goal of this repository is not only to build working AI systems but to understand the reasoning, architecture, and trade-offs behind them so they can be explained and implemented independently.
+The goal of this repository is to build AI systems from first principles while understanding the reasoning, architecture, and trade-offs behind modern GenAI applications. Each project incrementally introduces new capabilities—from conversational assistants and retrieval systems to planning agents, reflective agents, evaluation frameworks, and self-correcting code agents—so that every component can be explained, implemented, and extended independently.
+---
